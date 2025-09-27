@@ -23,6 +23,7 @@ jobs:
 
       - name: Build release distributions
         run: |
+          pip3 install poetry
           poetry install --with dev
           poetry build
 
